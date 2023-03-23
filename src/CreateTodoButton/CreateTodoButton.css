@@ -1,0 +1,43 @@
+:root{
+
+--color-1: #eac7c7;
+--color-5: #b488c6;
+--color-6: #b488c690;
+}
+
+.TodoButton{
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+
+.plus{
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 10%;
+    height: 60px;
+    width: 60px;
+    border-radius: 40%;
+    border: 2px solid var(--color-5);
+    background-color: var(--color-1);
+    transform: rotate(0);
+    transition: .8s ease;
+}
+
+.plus:hover {
+    background-color: var(--color-6);
+    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 600px){
+
+.plus{
+    right: 7%;
+    bottom: 12px;
+    height: 45px;
+    width: 45px;
+}
+
+}

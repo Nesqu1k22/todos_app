@@ -1,0 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Francois+One&display=swap');
+
+:root{
+
+--color-1: #eac7c7;
+--color-2: #A0C3D2;
+--color-3: #F7F5EB;
+--color-4: #EAE0DA;
+--color-5: #b488c6;
+--color-6: #b488c690;
+
+
+--font-title: 'Francois One', sans-serif;
+--font-text: 'Fjalla One', sans-serif;
+}
+

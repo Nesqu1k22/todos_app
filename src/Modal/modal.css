@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Francois+One&display=swap');
+
+:root{
+
+--color-1: #eac7c7;
+--color-2: #A0C3D2;
+--color-5: #b488c6;
+--color-4: #EAE0DA;
+--color-6: #b488c690;
+--color-7: #7fb881;
+--color-8: #db7272;
+
+--font-title: 'Francois One', sans-serif;
+--font-text: 'Fjalla One', sans-serif;
+}
+
+
+.hide{
+    display: none;
+}
+
+.modal-container{   
+    position: fixed;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #b488c6c4;
+}
+
+.modal-title{
+    font-family: var(--font-title);
+    font-size: 38px;
+    cursor: default;
+    color: var(--color-4);
+}
+
+.modal-input{
+    text-align: center;
+    font-size: medium;
+    font-family: var(--font-text);
+    background-color: var(--color-1);
+    border-radius: 6px;
+    border: var(--color-5) 2px solid;
+    box-shadow: 3px 5px 3px var(--color-5);
+    height: 200px;
+    width: 300px;
+}
+
+.modal-input:focus{
+    outline-color: var(--color-2);
+}
+
+.modal-buttons-container {
+    display: flex;
+    justify-content:space-between;
+    margin-top: 10px;
+}
+
+.modal-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 60px;
+    cursor: pointer;
+    width: 120px;
+    height: 35px;
+}
+
+.save{
+    font-size: x-large;
+    font-family: var(--font-text);
+    color: var(--color-7);
+    border: var(--color-7) 3px solid;
+    background-color: var(--color-1);
+}
+
+.cancel{
+    font-size: x-large;
+    font-family: var(--font-text);
+    color: var(--color-8);
+    border: var(--color-8) 3px solid;
+    background-color: var(--color-1);
+}

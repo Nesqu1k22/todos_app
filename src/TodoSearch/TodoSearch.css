@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Francois+One&display=swap');
+
+:root{
+
+--color-2: #A0C3D2;
+--color-4: #EAE0DA;
+--color-5: #b488c6;
+--color-6: #b488c690;
+
+--font-text: 'Fjalla One', sans-serif;
+}
+
+.TodoSearch__container{
+    display: flex;
+    justify-content: center;
+}
+
+.TodoSearch__input{
+    font-family: var(--font-text);
+    border:none;
+    border-bottom:4px solid;
+    background-color: var(--color-4);
+    border-color: var(--color-2);
+    height: 50px;
+    width: 300px;
+    font-size: x-large;
+    text-align: center;
+    color: var(--color-5);
+     outline: transparent;
+}
+
+.TodoSearch__input::selection{
+    border: none;
+    
+
+}
+
+.TodoSearch__input::placeholder{
+    color: var(--color-6);
+    font-family: var(--font-text);
+}

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Francois+One&display=swap');
+
+:root{
+
+--color-1: #eac7c7;
+--color-2: #A0C3D2;
+--color-5: #b488c6;
+--color-6: #b488c690;
+--color-7: #90ca92;
+--color-8: #db7272;
+
+--font-text: 'Fjalla One', sans-serif;
+}
+
+.TextItem{
+    color: var(--color-5);
+    font-family: var(--font-text);
+    font-size: 18px;
+    display: flex;
+    text-align: center;
+    margin: 5px;
+  }
+  
+  .TodoItem {
+    position: relative;
+    display: flex;
+    margin: 40px 0 40px 0;
+    min-height: 90px;
+    min-width: 500px;
+    justify-content: center;
+    background-color: var(--color-2);
+    border-radius: 30px;
+    border: 1px solid var(--color-1);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .TodoItem-p--complete {
+    text-decoration: line-through;
+    color: var(--color-6);
+  }
+  
+  .Icon {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 40%;
+    border: 2px solid var(--color-5);
+  }
+  
+  .check {
+          
+    top: 20px;
+    left: 25px;
+  }
+
+  .check--active {
+    background-color: var(--color-7);
+  }
+  
+  .delete {
+    right: 25px;
+    top: 20px;
+  }
+
+  .delete:hover {
+    border-radius: 50%;
+    background-color: var(--color-8);
+  }
+
+
+  @media screen and (max-width: 600px){
+    .TodoItem{
+    min-height: 80px;
+    min-width: 320px;
+    }
+
+    .Icon{
+      width: 30px;
+      height: 30px;
+      min-width: 30px;
+      min-height: 30px;
+    }
+  }
