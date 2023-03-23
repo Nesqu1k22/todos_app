@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/todos_app/static/css/main.477c1f32.css",
+    "main.js": "/todos_app/static/js/main.02fd4f04.js",
+    "static/media/404Todos.jpg": "/todos_app/static/media/404Todos.628763780fa88ef523e2.jpg",
+    "static/media/pintandoTodos.jpg": "/todos_app/static/media/pintandoTodos.c64b08fcda01508877d1.jpg",
+    "static/media/cargaTodos.jpg": "/todos_app/static/media/cargaTodos.8e19eaa04a14146d817e.jpg",
+    "index.html": "/todos_app/index.html",
+    "static/media/trash.svg": "/todos_app/static/media/trash.2707211bef5696786c52b3a1373fbcea.svg",
+    "static/media/check.svg": "/todos_app/static/media/check.13457eb0b615f574965f7dfd4c61dff0.svg",
+    "static/media/plus.svg": "/todos_app/static/media/plus.3781136178b4386c5afb091081cbda37.svg",
+    "main.477c1f32.css.map": "/todos_app/static/css/main.477c1f32.css.map",
+    "main.02fd4f04.js.map": "/todos_app/static/js/main.02fd4f04.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.477c1f32.css",
+    "static/js/main.02fd4f04.js"
+  ]
+}
