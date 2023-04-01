@@ -1,23 +1,17 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import './modal.css'
-import { TodoContext } from '../TodoContext';
+import { TodoContext } from '../App/useTodos';
 
 
 
-function Modal(props) {
-    
-    const{ 
-        valueTodo,
-        showNewTodo,
-     }= React.useContext(TodoContext);
-
+function Modal({valueTodo,showNewTodo,show,hideModal,newTodo}) {
     const onInputModalValue = (e) =>  {
         showNewTodo(e.target.value);
     };
 
     return ReactDOM.createPortal(
-        <section className= {`hide ${props.show && 'modal-container'}`}>
+        <section className= {`hide ${show && 'modal-container'}`}>
         <h2 className="modal-title">write your next task to do</h2>
         <form className="modal-form">
            <textarea
@@ -28,8 +22,8 @@ function Modal(props) {
            />
         </form>
         <div className="modal-buttons-container">
-        <div className="modal-button cancel" onClick={()=>props.hideModal(false)}><p>cancel</p><img /></div>
-        <div className="modal-button save" onClick={()=> props.newTodo()}><p>save</p><img /></div>
+        <div className="modal-button cancel" onClick={()=>hideModal(false)}><p>cancel</p><img /></div>
+        <div className="modal-button save" onClick={()=> newTodo()}><p>save</p><img /></div>
         </div>
        </section>,
         document.getElementById('modal')
